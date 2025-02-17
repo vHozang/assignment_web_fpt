@@ -1,0 +1,141 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  /* margin: 0;  // Nếu bạn có header cố định, có thể thêm margin-top ở đây */
+}
+
+/* Giả sử header có class .top-nav */
+.top-nav {
+  background-color: #ffcad4;
+  padding: 20px;
+}
+
+/* Tạo khoảng cách giữa header và phần cartContainer */
+#cartContainer {
+  max-width: 1200px;
+  margin: 80px auto 40px auto; /* Cách header 80px, đáy 40px */
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Card sản phẩm */
+.cart-item {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-image {
+  flex: 1;
+  max-width: 40%; /* Ảnh chiếm khoảng 40% chiều rộng card */
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  overflow: hidden; /* Ảnh tràn sẽ bị cắt */
+}
+
+.cart-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart-item-info {
+  flex: 1;
+  padding: 16px;
+}
+
+/* Tiêu đề */
+.cart-item-info h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Thông tin chi tiết */
+.cart-item-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Điều khiển số lượng */
+.quantity-control {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  background-color: #ccc;
+  border: none;
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.quantity-control button:hover {
+  background-color: #bbb;
+}
+
+.quantity-control .quantity {
+  margin: 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Nút hành động */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.remove-btn,
+.order-btn {
+  border: none;
+  padding: 8px 16px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Nút Xoá */
+.remove-btn {
+  background-color: #f44336;
+}
+
+.remove-btn:hover {
+  opacity: 0.8;
+}
+
+/* Nút Đặt hàng */
+.order-btn {
+  background-color: #4caf50;
+}
+
+.order-btn:hover {
+  opacity: 0.8;
+}
+
+/* Footer (tùy chỉnh) */
+.footer {
+  background-color: #ffc0cb;
+  padding: 20px;
+  text-align: center;
+}

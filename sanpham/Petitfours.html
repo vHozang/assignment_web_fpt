@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chi tiết Bánh - Tích chọn Size & Topping</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="../home/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4091c0430f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="sidebar-menu" id="sidebarMenu">
+      <h3>
+        <a href="../index.html"
+          >Cookie<i class="fa-solid fa-cookie-bite"></i
+        ></a>
+      </h3>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm..." />
+        <button id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <ul>
+        <li><a href="../index.html">Trang chủ</a></li>
+        <li>
+          <a href="#" id="productMenuBtn"
+            >Sản phẩm <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <ul class="sub-menu" id="productSubMenu">
+            <li><a href="#">Bánh kem</a></li>
+            <li><a href="#">Bánh su kem</a></li>
+            <li><a href="#">Bánh mì</a></li>
+            <li><a href="#">Bánh quy</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="#">Giỏ hàng</a></li>
+        <li><a href="#">Liên hệ</a></li>
+        <li><a href="#">Về chúng tôi</a></li>
+        <li><a href="#">Câu hỏi thường gặp</a></li>
+        <li><a href="#">Chính sách đổi trả</a></li>
+        <li><a href="#">Hướng dẫn đặt hàng</a></li>
+      </ul>
+    </div>
+
+    <header>
+      <div class="top-nav">
+        <div class="menu-btn" id="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-center">
+          <a href="../index.html">
+            Cookie<i class="fa-solid fa-cookie-bite"></i
+          ></a>
+        </div>
+        <div class="nav-right">
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="../cart/cart.html" id="cartLink">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="product-detail-container">
+      <div class="product-image">
+        <img
+          src="../home/images/cakes-489849_1280.jpg"
+          alt="Bánh ngon"
+          id="mainProductImage"
+        />
+      </div>
+
+      <div class="product-info">
+        <h1 class="product-name">Petit fours - Bánh Ngọt Nhỏ Tinh Tế</h1>
+        <p class="product-summary">
+          Petit fours là những chiếc bánh nhỏ xinh, tinh tế được chế biến với sự
+          chăm chút tỉ mỉ. Với kết cấu mềm mịn và hương vị đa dạng – từ kem bông
+          mịn, custard thơm lừng cho đến mứt trái cây ngọt dịu – mỗi chiếc petit
+          fours mang đến trải nghiệm ẩm thực độc đáo, là lựa chọn lý tưởng cho
+          những buổi tiệc, sự kiện sang trọng hay làm quà tặng tinh tế.
+        </p>
+
+        <div class="highlight-box">
+          <h2>THÀNH PHẦN BÁNH</h2>
+          <ul>
+            <li>Bột mì tinh chế, bơ, đường, trứng và sữa</li>
+            <li>
+              Nhân bánh: lựa chọn giữa kem bông, custard hoặc mứt trái cây
+            </li>
+            <li>
+              Hương vị tự nhiên: vani, hạt nhục đậu khấu và các gia vị tự nhiên
+              khác
+            </li>
+            <li>
+              Trang trí: Đường bột, hạt dẻ, hoặc lớp socola mỏng tạo điểm nhấn
+            </li>
+          </ul>
+        </div>
+
+        <div class="price-box">
+          <p class="current-price" id="finalPrice" data-baseprice="129000">
+            129.000 đ
+          </p>
+          <p class="old-price">280.000 đ</p>
+        </div>
+
+        <div class="option-box">
+          <h3>Chọn size & topping</h3>
+
+          <div class="size-grid">
+            <label>
+              <input
+                type="radio"
+                name="size"
+                value="S"
+                data-price="0"
+                checked
+              />
+              Size S (+0đ)
+            </label>
+            <label>
+              <input type="radio" name="size" value="M" data-price="50000" />
+              Size M (+50.000đ)
+            </label>
+            <label>
+              <input type="radio" name="size" value="L" data-price="100000" />
+              Size L (+100.000đ)
+            </label>
+          </div>
+
+          <div class="topping-grid">
+            <label>
+              <input type="checkbox" name="topping" data-price="20000" />
+              Thêm Socola (+20.000đ)
+            </label>
+            <label>
+              <input type="checkbox" name="topping" data-price="30000" />
+              Thêm Trái Cây (+30.000đ)
+            </label>
+            <label>
+              <input type="checkbox" name="topping" data-price="15000" />
+              Thêm Hạnh Nhân (+15.000đ)
+            </label>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <a href="#" class="add-to-cart" id="addToCartBtn"
+            >Thêm vào giỏ hàng</a
+          >
+          <a href="#" class="buy-now">Đặt hàng</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>
+            <a href="../index.html"
+              >Cookie<i class="fa-solid fa-cookie-bite"></i
+            ></a>
+          </h3>
+          <p>
+            là một chủ đề cửa hàng được thiết kế cho các doanh nghiệp nhỏ liên
+            quan đến thực phẩm
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-contact">
+          <a href="https://www.facebook.com/TrungRocciu/" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://github.com/DucTrung3110/" target="_blank"
+            ><i class="fa-brands fa-square-github"></i
+          ></a>
+          <a href="https://www.youtube.com/@DucTrung3110/videos" target="_blank"
+            ><i class="fa-brands fa-square-youtube"></i
+          ></a>
+          <p>domain.com</p>
+          <p>(123) 456-7890</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Designed by <strong>ductrung3110</strong></p>
+      </div>
+    </footer>
+
+    <script src="../cart/cart.js"></script>
+    <script src="detail.js"></script>
+    <script src="../home/main.js"></script>
+  </body>
+</html>

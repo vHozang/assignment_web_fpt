@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Các sự kiện menu, submenu, tìm kiếm
   const menuBtn = document.getElementById("menuBtn");
   const sidebarMenu = document.getElementById("sidebarMenu");
   const productMenuBtn = document.getElementById("productMenuBtn");
@@ -30,9 +31,4 @@ document.addEventListener("DOMContentLoaded", function () {
       productSubMenu.style.display = "none"; // Ẩn submenu
     }
   });
-});
-
-document.getElementById("searchBtn").addEventListener("click", function () {
-  let keyword = document.getElementById("searchInput").value.toLowerCase();
-  alert("Bạn đang tìm kiếm: " + keyword);
 });
