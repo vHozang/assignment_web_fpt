@@ -9,73 +9,97 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f8f8f8;
   color: #333;
-  /* margin: 0;  // Nếu bạn có header cố định, có thể thêm margin-top ở đây */
 }
 
-/* Giả sử header có class .top-nav */
-.top-nav {
-  background-color: #ffcad4;
-  padding: 20px;
-}
-
-/* Tạo khoảng cách giữa header và phần cartContainer */
+/* Container giỏ hàng */
 #cartContainer {
   max-width: 1200px;
-  margin: 80px auto 40px auto; /* Cách header 80px, đáy 40px */
-  padding: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  margin: 20px auto 40px auto;
+  padding: 20px;
+  min-height: 60vh;
 }
 
-/* Card sản phẩm */
-.cart-item {
-  background-color: #fff;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  display: flex;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.cart-item-image {
-  flex: 1;
-  max-width: 40%; /* Ảnh chiếm khoảng 40% chiều rộng card */
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  overflow: hidden; /* Ảnh tràn sẽ bị cắt */
-}
-
-.cart-item-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.cart-item-info {
-  flex: 1;
-  padding: 16px;
-}
-
-/* Tiêu đề */
-.cart-item-info h2 {
-  font-size: 18px;
-  margin-bottom: 8px;
+.cart-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 20px 0 20px;
   color: #333;
 }
 
-/* Thông tin chi tiết */
-.cart-item-info p {
-  margin: 4px 0;
-  font-size: 14px;
-  color: #555;
+/* Mỗi sản phẩm hiển thị dưới dạng list */
+.cart-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 16px;
 }
 
-/* Điều khiển số lượng */
+/* Phần ảnh bên trái */
+.cart-item-left {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.cart-item-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Phần thông tin ở giữa */
+.cart-item-center {
+  flex: 1;
+}
+
+/* Brand/Series nhỏ hơn tên sản phẩm */
+.cart-item-brand {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+/* Tên sản phẩm to hơn */
+.cart-item-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Giá sản phẩm */
+.cart-item-price {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Giá gốc gạch ngang (nếu có) */
+.cart-item-old-price {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* Các đoạn text chung (size, topping...) */
+.cart-item-center p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+/* Khu vực nút tăng/giảm số lượng */
 .quantity-control {
   margin: 12px 0;
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
@@ -98,25 +122,21 @@ body {
   font-weight: 600;
 }
 
-/* Nút hành động */
+/* Nút hành động (Đặt hàng, Xóa) */
 .action-buttons {
   display: flex;
   gap: 8px;
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
-.remove-btn,
-.order-btn {
+/* Nút Xóa */
+.remove-btn {
   border: none;
   padding: 8px 16px;
   color: #fff;
   cursor: pointer;
   border-radius: 4px;
   font-size: 14px;
-}
-
-/* Nút Xoá */
-.remove-btn {
   background-color: #f44336;
 }
 
@@ -126,16 +146,15 @@ body {
 
 /* Nút Đặt hàng */
 .order-btn {
+  border: none;
+  padding: 8px 16px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
   background-color: #4caf50;
 }
 
 .order-btn:hover {
   opacity: 0.8;
-}
-
-/* Footer (tùy chỉnh) */
-.footer {
-  background-color: #ffc0cb;
-  padding: 20px;
-  text-align: center;
 }

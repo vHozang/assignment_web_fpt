@@ -210,7 +210,7 @@ header {
 
 .hero::before {
   content: "";
-  background: url("./images/doughnuts-1868573_1280.jpg") center/cover no-repeat;
+  background: url("./images/dessert-9006799_1280.jpg") center/cover no-repeat;
   opacity: 0.9;
   position: absolute;
   top: 0;
@@ -229,8 +229,10 @@ header {
 
 .hero h1 {
   font-family: "Roboto", serif;
-  font-size: 36px;
+  font-size: 48px;
   color: ghostwhite;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
   line-height: 1.2;
 }
@@ -480,7 +482,9 @@ header {
   max-width: 2000px;
   margin: 0 auto;
   overflow-x: auto;
+  overflow-y: visible;
 }
+
 .product-card {
   background-color: var(--card-bg);
   border: 1px solid #eee;
@@ -488,10 +492,11 @@ header {
   width: 250px;
   text-align: auto;
   padding: 20px;
-  transition: box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
+  transform: translateY(-10px);
   box-shadow: 0 4px 12px var(--shadow-color);
 }
 
