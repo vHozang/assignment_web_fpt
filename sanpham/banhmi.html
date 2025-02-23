@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Giỏ hàng</title>
-    <link rel="stylesheet" href="cart.css" />
+    <title>COOKIE</title>
     <link rel="stylesheet" href="../home/style.css" />
+    <link rel="stylesheet" href="sanpham.css" />
     <script
       src="https://kit.fontawesome.com/4091c0430f.js"
       crossorigin="anonymous"
@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="../home/main.js"></script>
   </head>
   <body>
     <div class="sidebar-menu" id="sidebarMenu">
@@ -37,14 +38,14 @@
             >Sản phẩm <i class="fa-solid fa-chevron-down"></i
           ></a>
           <ul class="sub-menu" id="productSubMenu">
-            <li><a href="../sanpham/banhkem.html">Bánh kem</a></li>
-            <li><a href="../sanpham/banhsukem.html">Bánh su kem</a></li>
-            <li><a href="../sanpham/banhmi.html">Bánh mì</a></li>
-            <li><a href="../sanpham/banhquy.html">Bánh quy</a></li>
+            <li><a href="./banhkem.html">Bánh kem</a></li>
+            <li><a href="./banhsukem.html">Bánh su kem</a></li>
+            <li><a href="#">Bánh mì</a></li>
+            <li><a href="./banhquy.html">Bánh quy</a></li>
           </ul>
         </li>
         <li><a href="#">Khuyến mãi</a></li>
-        <li><a href="#">Giỏ hàng</a></li>
+        <li><a href="../cart/cart.html">Giỏ hàng</a></li>
         <li><a href="#">Liên hệ</a></li>
         <li><a href="#">Về chúng tôi</a></li>
         <li><a href="#">Câu hỏi thường gặp</a></li>
@@ -67,7 +68,7 @@
         </div>
         <div class="nav-right">
           <a href="#"><i class="fa-solid fa-user"></i></a>
-          <a href="#" id="cartLink">
+          <a href="../cart/cart.html" id="cartLink">
             <i class="fa-solid fa-cart-shopping"></i>
             <span id="cartCount" class="cart-count">0</span>
           </a>
@@ -75,11 +76,88 @@
       </div>
     </header>
 
-    <!-- Tiêu đề Giỏ hàng -->
-    <h1 class="cart-title">GIỎ HÀNG CỦA BẠN</h1>
+    <!-- code moi -->
+    <div class="container">
+      <!-- Sản phẩm 1 -->
+      <div class="cake-item">
+        <a href="./Croissant.html">
+          <img src="../home/img/croissant.jpg" alt="bread1" />
+          <p class="cake-code">110$</p>
+          <p class="cake-name">Croissant Bread</p>
+          <button class="btn-add-cart">Mua Hàng</button>
+        </a>
+      </div>
 
-    <!-- Khu vực hiển thị giỏ hàng -->
-    <div id="cartContainer"></div>
+      <!-- Sản phẩm 2 -->
+      <div class="cake-item">
+        <a href="">
+          <img src="../home/img/banh-mi-baguette.webp" alt="bread2" />
+          <p class="cake-code">159$</p>
+          <p class="cake-name">Baguette Bread</p>
+          <button class="btn-add-cart">Mua Hàng</button>
+        </a>
+      </div>
+
+      <!-- Sản phẩm 3 -->
+      <div class="cake-item">
+        <a href="">
+          <img src="../home/img/banh-mi-ciabatta.webp" alt="bread3" />
+          <p class="cake-code">100$</p>
+          <p class="cake-name">Ciabatta Bread</p>
+          <button class="btn-add-cart">Mua Hàng</button>
+        </a>
+      </div>
+
+      <!-- Sản phẩm 4 -->
+      <div class="cake-item">
+        <a href="">
+          <img src="../home/img/sanwich7.jpg" alt="bread4" />
+          <p class="cake-code">199$</p>
+          <p class="cake-name">Sandwich Bread</p>
+          <button class="btn-add-cart">Mua Hàng</button>
+        </a>
+      </div>
+
+      <!-- Sản phẩm 5 -->
+      <div class="cake-item">
+        <a href="">
+          <img src="../home/img/banhmipita.webp" alt="bread5" />
+          <p class="cake-code">120$</p>
+          <p class="cake-name">Pita Bread</p>
+          <button class="btn-add-cart">Mua Hàng</button>
+        </a>
+      </div>
+
+      <!-- Sản phẩm 6 -->
+      <div class="cake-item">
+        <a href="">
+          <img src="../home/img/sourdough2.webp" alt="bread6" />
+          <p class="cake-code">140$</p>
+          <p class="cake-name">Sourdough Bread</p>
+          <button class="btn-add-cart">Mua Hàng</button>
+        </a>
+      </div>
+
+      <!-- Sản phẩm 7 -->
+      <div class="cake-item">
+        <a href="">
+          <img src="../home/img/brioche4.jpg" alt="bread7" />
+          <p class="cake-code">169$</p>
+          <p class="cake-name">Brioche Bread</p>
+          <button class="btn-add-cart">Mua Hàng</button>
+        </a>
+      </div>
+
+      <!-- Sản phẩm 8 -->
+      <div class="cake-item">
+        <a href="">
+          <img src="../home/img/rye.jpg" alt="bread8" />
+          <p class="cake-code">210$</p>
+          <p class="cake-name">Rye Bread</p>
+          <button class="btn-add-cart">Mua Hàng</button>
+        </a>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer-content">
@@ -117,8 +195,7 @@
         <p>Designed by <strong>ductrung3110</strong></p>
       </div>
     </footer>
-
-    <script src="cart.js"></script>
-    <script src="../home/main.js"></script>
   </body>
+
+  <script src="./home/main.js"></script>
 </html>
