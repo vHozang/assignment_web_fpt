@@ -158,3 +158,10 @@ body {
 .order-btn:hover {
   opacity: 0.8;
 }
+/*Footer luôn luôn nằm dưới cùng*/
+.footer{
+  background: #0066cc;
+  position: absolute;
+  bottom: 0;
+  width: 100%; 
+ }
