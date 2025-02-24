@@ -392,6 +392,14 @@ header {
   padding: 40px 20px;
   margin-top: 40px;
   border-top: 1px solid #eee;
+  <!-->
+
+  background: #0066cc;
+  position: absolute;
+  bottom: 0;
+  width: 100%; 
+
+
 }
 
 .footer-content {
