@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <title>COOKIE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Thanh Toán</title>
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="../home/style.css" />
-    <link rel="stylesheet" href="sanpham.css" />
     <script
       src="https://kit.fontawesome.com/4091c0430f.js"
       crossorigin="anonymous"
@@ -38,10 +39,10 @@
             >Sản phẩm <i class="fa-solid fa-chevron-down"></i
           ></a>
           <ul class="sub-menu" id="productSubMenu">
-            <li><a href="#">Bánh kem</a></li>
-            <li><a href="./banhsukem.html">Bánh su kem</a></li>
-            <li><a href="./banhmi.html">Bánh mì</a></li>
-            <li><a href="./banhquy.html">Bánh quy</a></li>
+            <li><a href="../sanpham/banhkem.html">Bánh kem</a></li>
+            <li><a href="../sanpham/banhsukem.html">Bánh su kem</a></li>
+            <li><a href="../sanpham/banhmi.html">Bánh mì</a></li>
+            <li><a href="../sanpham/banhquy.html">Bánh quy</a></li>
           </ul>
         </li>
         <li><a href="#">Khuyến mãi</a></li>
@@ -76,89 +77,91 @@
       </div>
     </header>
 
-    <!-- code moi -->
+    <!-- Tiêu đề trang -->
+    <div class="page-title">ĐƠN HÀNG CỦA BẠN</div>
+
     <div class="container">
-      <!-- Sản phẩm 1 -->
-      <div class="cake-item">
-        <a href="Crumble.html">
-          <img src="../home/images/strawberry-8214486_1280.jpg" alt="cake1" />
-          <p class="cake-code">260$</p>
-          <p class="cake-name">Bánh Crumble Mâm Xôi</p>
-          <button class="btn-add-cart">Mua Hàng</button>
-        </a>
+      <!-- Danh sách sản phẩm trong giỏ -->
+      <div class="cart-items">
+        <!-- Ví dụ 1 sản phẩm -->
+        <div class="cart-item">
+          <div class="item-info">
+            <img src="../home/img/Black-Forest-cake.jpg" alt="Bánh Socola" />
+            <div class="item-details">
+              <h4>Bánh Socola Phô Mai Chảy Hoa Quả</h4>
+              <p>Size S (+0) | Topping: +0</p>
+            </div>
+          </div>
+          <div>
+            <span class="item-price">239.000 đ</span>
+            <button class="remove-btn">Xóa</button>
+          </div>
+        </div>
       </div>
 
-      <!-- Sản phẩm 2 -->
-      <div class="cake-item">
-        <a href="Crepe.html">
-          <img
-            src="../home/images/strawberry-roll-1263099_1280.jpg"
-            alt="cake2"
+      <!-- Form Thanh Toán -->
+      <div class="checkout-form">
+        <h3>Thông tin giao hàng</h3>
+        <div class="form-group">
+          <label for="name">Họ và tên</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Nhập họ và tên người nhận"
+            required
           />
-          <p class="cake-code">299$</p>
-          <p class="cake-name">Bánh Crepe Ngàn Lớp (Mille Crepe Cake)</p>
-          <button class="btn-add-cart">Mua Hàng</button>
-        </a>
-      </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Số điện thoại</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Nhập số điện thoại"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="address">Địa chỉ giao hàng</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Nhập địa chỉ"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="note">Ghi chú (nếu có)</label>
+          <textarea
+            id="note"
+            name="note"
+            rows="3"
+            placeholder="Ghi chú cho đơn hàng..."
+          ></textarea>
+        </div>
 
-      <!-- Sản phẩm 3 -->
-      <div class="cake-item">
-        <a href="">
-          <img src="../home/img/WhippedCreamCake2.jpg" alt="cake3" />
-          <p class="cake-code">285$</p>
-          <p class="cake-name">Buttercream Cake</p>
-          <button class="btn-add-cart">Mua Hàng</button>
-        </a>
-      </div>
+        <h3>Phương thức thanh toán</h3>
+        <div class="payment-methods">
+          <label>
+            <input type="radio" name="payment" value="cod" checked /> Thanh toán
+            khi nhận hàng (COD)
+          </label>
+          <label>
+            <input type="radio" name="payment" value="atm" /> Chuyển khoản ATM
+          </label>
+          <label>
+            <input type="radio" name="payment" value="credit" /> Thẻ tín dụng /
+            Ghi nợ
+          </label>
+        </div>
 
-      <!-- Sản phẩm 4 -->
-      <div class="cake-item">
-        <a href="">
-          <img src="../home/img/redvelet.jpg" alt="cake4" />
-          <p class="cake-code">310$</p>
-          <p class="cake-name">Redvelet Cake</p>
-          <button class="btn-add-cart">Mua Hàng</button>
-        </a>
-      </div>
-
-      <!-- Sản phẩm 5 -->
-      <div class="cake-item">
-        <a href="">
-          <img src="../home/img/tiramisu_cake_main.jpg" alt="cake5" />
-          <p class="cake-code">199$</p>
-          <p class="cake-name">Tiramisu Cake</p>
-          <button class="btn-add-cart">Mua Hàng</button>
-        </a>
-      </div>
-
-      <!-- Sản phẩm 6 -->
-      <div class="cake-item">
-        <a href="">
-          <img src="../home/img/mousse2.webp" alt="cake6" />
-          <p class="cake-code">349$</p>
-          <p class="cake-name">Mousse Cake</p>
-          <button class="btn-add-cart">Mua Hàng</button>
-        </a>
-      </div>
-
-      <!-- Sản phẩm 7 -->
-      <div class="cake-item">
-        <a href="">
-          <img src="../home/img/Cheesecake.jpg" alt="cake7" />
-          <p class="cake-code">322$</p>
-          <p class="cake-name">Cheese Cake</p>
-          <button class="btn-add-cart">Mua Hàng</button>
-        </a>
-      </div>
-
-      <!-- Sản phẩm 8 -->
-      <div class="cake-item">
-        <a href="">
-          <img src="../home/img/Black-Forest-cake.jpg" alt="cake8" />
-          <p class="cake-code">210$</p>
-          <p class="cake-name">Rye Bread</p>
-          <button class="btn-add-cart">Mua Hàng</button>
-        </a>
+        <!-- Tổng tiền và nút thanh toán -->
+        <div class="total-section">
+          Tạm tính: <span class="total-price">239.000 đ</span>
+        </div>
+        <button class="checkout-btn">Thanh Toán</button>
       </div>
     </div>
 
@@ -198,8 +201,8 @@
         <p>Designed by <strong>ductrung3110</strong></p>
       </div>
     </footer>
-  </body>
 
-  <script src="../home/main.js"></script>
-  <script src="../cart/cart.js"></script>
+    <script src="../home/main.js"></script>
+    <script src="../cart/cart.js"></script>
+  </body>
 </html>

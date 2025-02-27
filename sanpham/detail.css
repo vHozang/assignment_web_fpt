@@ -165,14 +165,6 @@ body {
   background: #b71c1c;
 }
 
-.buy-now {
-  background: #388e3c;
-}
-
-.buy-now:hover {
-  background: #2e7d32;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
   .product-detail-container {

@@ -1,207 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>COOKIE</title>
+    <link rel="stylesheet" href="home/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4091c0430f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar-menu" id="sidebarMenu">
+      <h3>
+        <a href="#">Cookie<i class="fa-solid fa-cookie-bite"></i></a>
+      </h3>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>COOKIE</title>
-  <link rel="stylesheet" href="./home/style.css" />
-  <script src="https://kit.fontawesome.com/4091c0430f.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
-</head>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm..." />
+        <button id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
 
-<body>
-  <div class="sidebar-menu" id="sidebarMenu">
-    <h3>
-      <a href="#">Cookie<i class="fa-solid fa-cookie-bite"></i></a>
-    </h3>
-
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Tìm kiếm..." />
-      <button id="searchBtn">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li>
+          <a href="#" id="productMenuBtn"
+            >Sản phẩm <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <ul class="sub-menu" id="productSubMenu">
+            <li><a href="./sanpham/banhkem.html">Bánh kem</a></li>
+            <li><a href="./sanpham/banhsukem.html">Bánh su kem</a></li>
+            <li><a href="./sanpham/banhmi.html">Bánh mì</a></li>
+            <li><a href="./sanpham/banhquy.html">Bánh quy</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="./cart/cart.html">Giỏ hàng</a></li>
+        <li><a href="./contact/contact.html">Liên hệ</a></li>
+        <li><a href="./about/about.html">Về chúng tôi</a></li>
+        <li><a href="#">Câu hỏi thường gặp</a></li>
+        <li><a href="#">Chính sách đổi trả</a></li>
+        <li><a href="#">Hướng dẫn đặt hàng</a></li>
+      </ul>
     </div>
 
-    <ul>
-      <li><a href="#">Trang chủ</a></li>
-      <li>
-        <a href="#" id="productMenuBtn">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
-        <ul class="sub-menu" id="productSubMenu">
-          <li><a href="./sanpham/banhkem.html">Bánh kem</a></li>
-          <li><a href="./sanpham/banhsukem.html">Bánh su kem</a></li>
-          <li><a href="./sanpham/banhmi.html">Bánh mì</a></li>
-          <li><a href="./sanpham/banhquy.html">Bánh quy</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Khuyến mãi</a></li>
-      <li><a href="./cart/cart.html">Giỏ hàng</a></li>
-      <li><a href="./contact/contact.html">Liên hệ</a></li>
-      <li><a href="#">Về chúng tôi</a></li>
-      <li><a href="#">Câu hỏi thường gặp</a></li>
-      <li><a href="#">Chính sách đổi trả</a></li>
-      <li><a href="#">Hướng dẫn đặt hàng</a></li>
-    </ul>
-  </div>
-
-  <header>
-    <div class="top-nav">
-      <div class="menu-btn" id="menuBtn">
-        <span></span>
-        <span></span>
-        <span></span>
+    <header>
+      <div class="top-nav">
+        <div class="menu-btn" id="menuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-center">
+          <a href="../index.html"
+            >Cookie<i class="fa-solid fa-cookie-bite"></i
+          ></a>
+        </div>
+        <div class="nav-right">
+          <a href="./auth/login.html"><i class="fa-solid fa-user"></i></a>
+          <a href="./cart/cart.html" id="cartLink">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount" class="cart-count">0</span>
+          </a>
+        </div>
       </div>
-      <div class="nav-center">
-        <a href="../index.html">Cookie<i class="fa-solid fa-cookie-bite"></i></a>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          Cookie ngon chảy nước miếng,<br />Bánh ngon hơn người yêu cũ của bạn
+        </h1>
+        <p style="visibility: hidden"></p>
+        <div class="cookie-tags">
+          <div class="cookie-tag">Bánh kem</div>
+          <a href="./sanpham/sukem.html"
+            ><div class="cookie-tag">Bánh su kem</div></a
+          >
+          <div class="cookie-tag">Bánh Tiramisu</div>
+          <div class="cookie-tag">Bánh Cheesecake</div>
+          <div class="cookie-tag">Bánh Mousse</div>
+          <a href="./sanpham/Cupcake.html"
+            ><div class="cookie-tag">Bánh Cupcake</div></a
+          >
+          <div class="cookie-tag">Bánh mì sandwich</div>
+          <div class="cookie-tag">Bánh mì baguette</div>
+          <a href="./sanpham/Croissant.html"
+            ><div class="cookie-tag">Bánh mì croissant</div></a
+          >
+        </div>
       </div>
-      <div class="nav-right">
-        <a href="#"><i class="fa-solid fa-user"></i></a>
-        <a href="./cart/cart.html" id="cartLink">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <span id="cartCount" class="cart-count">0</span>
-        </a>
+    </section>
+
+    <section class="serving">
+      <h2>BEST SELLER</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <a href="./sanpham/summary.html"
+            ><img src="./home/images/cake-1284548_1280.jpg" alt="Holiday Edit"
+          /></a>
+          <h3>Bánh trái cây</h3>
+          <a href="./sanpham/summary.html" class="order-btn">order now</a>
+        </div>
+
+        <div class="product-card">
+          <a href="./sanpham/Brownie.html">
+            <img
+              src="./home/images/chocolate-cake-4446608_1280.jpg"
+              alt="Signature Box"
+            />
+          </a>
+          <h3>Bánh chocolate</h3>
+          <a href="./sanpham/Brownie.html" class="order-btn">order now</a>
+        </div>
+
+        <div class="product-card">
+          <a href="#"
+            ><img src="./home/images/cupcakes-1133146_1280.jpg" alt="Gift Box"
+          /></a>
+          <h3>Bánh kem trà xanh</h3>
+          <a href="#" class="order-btn">order now</a>
+        </div>
+
+        <div class="product-card">
+          <a href="./sanpham/Cupcake.html"
+            ><img src="./home/images/cupcakes-5116009_1280.jpg" alt="Gift Box"
+          /></a>
+          <h3>Bánh kem sôcôla</h3>
+          <a href="./sanpham/Cupcake.html" class="order-btn">order now</a>
+        </div>
+
+        <div class="product-card">
+          <a href="./sanpham/sukem.html"
+            ><img src="./home/images/eclair-3366430_1280.jpg" alt="Gift Box"
+          /></a>
+          <h3>Bánh su kem</h3>
+          <a href="./sanpham/sukem.html" class="order-btn">order now</a>
+        </div>
       </div>
-    </div>
-  </header>
+    </section>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>
-        Cookie ngon chảy nước miếng,<br />Bánh ngon hơn người yêu cũ của bạn
-      </h1>
-      <p style="visibility: hidden"></p>
-      <div class="cookie-tags">
-        <div class="cookie-tag">Bánh kem</div>
-        <a href="./sanpham/sukem.html">
-          <div class="cookie-tag">Bánh su kem</div>
-        </a>
-        <div class="cookie-tag">Bánh Tiramisu</div>
-        <div class="cookie-tag">Bánh Cheesecake</div>
-        <div class="cookie-tag">Bánh Mousse</div>
-        <a href="./sanpham/Cupcake.html">
-          <div class="cookie-tag">Bánh Cupcake</div>
-        </a>
-        <div class="cookie-tag">Bánh mì sandwich</div>
-        <div class="cookie-tag">Bánh mì baguette</div>
-        <a href="./sanpham/Croissant.html">
-          <div class="cookie-tag">Bánh mì croissant</div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="serving">
-    <h2>BEST SELLER</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <a href="./sanpham/summary.html"><img src="./home/images/cake-1284548_1280.jpg" alt="Holiday Edit" /></a>
-        <h3>Bánh trái cây</h3>
-        <a href="./sanpham/summary.html" class="order-btn">order now</a>
-      </div>
-
-      <div class="product-card">
-        <a href="./sanpham/Brownie.html">
-          <img src="./home/images/chocolate-cake-4446608_1280.jpg" alt="Signature Box" />
-        </a>
-        <h3>Bánh chocolate</h3>
-        <a href="./sanpham/Brownie.html" class="order-btn">order now</a>
-      </div>
-
-      <div class="product-card">
-        <a href="#"><img src="./home/images/cupcakes-1133146_1280.jpg" alt="Gift Box" /></a>
-        <h3>Bánh kem trà xanh</h3>
-        <a href="#" class="order-btn">order now</a>
-      </div>
-
-      <div class="product-card">
-        <a href="./sanpham/Cupcake.html"><img src="./home/images/cupcakes-5116009_1280.jpg" alt="Gift Box" /></a>
-        <h3>Bánh kem sôcôla</h3>
-        <a href="./sanpham/Cupcake.html" class="order-btn">order now</a>
-      </div>
-
-      <div class="product-card">
-        <a href="./sanpham/sukem.html"><img src="./home/images/eclair-3366430_1280.jpg" alt="Gift Box" /></a>
-        <h3>Bánh su kem</h3>
-        <a href="./sanpham/sukem.html" class="order-btn">order now</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="testimonial">
-    <div class="quote-container">
-      <p class="quote">
-        “Crispy on the outside, gooey on the inside, and packed with
-        chocolatey goodness in every bite. One taste, and you'll be hooked —
-        it's like a warm hug in cookie form!”
-      </p>
-      <p class="author">– Trung Trờ Tre –</p>
-    </div>
-  </section>
-
-  <section class="bestseller-section">
-    <div class="bestseller-row">
-      <span>Bánh kem <i class="fa-solid fa-heart"></i></span>
-      <span>Bánh mì <i class="fa-solid fa-heart"></i></span>
-      <span>Bánh quy <i class="fa-solid fa-heart"></i></span>
-      <span>bánh su kem <i class="fa-solid fa-heart"></i></span>
-      <span>bánh donut <i class="fa-solid fa-heart"></i></span>
-    </div>
-
-    <div class="cookie-image-container">
-      <img src="./home/images/ai-generated-8758588_1280.png" alt="Cookies Box" />
-    </div>
-  </section>
-
-  <section class="follow-us">
-    <h2>Follow us <span>@ductrung3110</span></h2>
-    <div class="feed-grid">
-      <a href="./sanpham/Croissant.html"><img src="./home/images/bread-1284438_1280.jpg" alt="Cookie 1" /></a>
-      <a href="./sanpham/Petitfours.html"><img src="./home/images/cakes-489849_1280.jpg" alt="Cookie 2" /></a>
-      <a href="./sanpham/Donut.html"><img src="./home/images/donuts-2969490_1280.jpg" alt="Cookie 3" /></a>
-      <a href="./sanpham/Crumble.html"><img src="./home/images/strawberry-8214486_1280.jpg" alt="Cookie 4" /></a>
-      <a href="./sanpham/Macaron.html"><img src="./home/images/patisserie-5392232_1280.jpg" alt="Cookie 5" /></a>
-      <a href="./sanpham/Crepe.html">
-        <img src="./home/images/strawberry-roll-1263099_1280.jpg" alt="Cookie 6" />
-      </a>
-      <a href="./sanpham/banhmi1.html"><img src="./home/images/bread-8814788_1280.jpg" alt="Cookie 7" /></a>
-      <a href="./sanpham/Cookie.html"><img src="./home/images/cookies-1051884_1280.jpg" alt="Cookie 8" /></a>
-      <a href="#"><img src="./home/images/cupcakes-6251116_1280.jpg" alt="Cookie 9" /></a>
-      <a href="./sanpham/PuffPastry.html"><img src="./home/images/cake-6491617_1280.jpg" alt="Cookie 10" /></a>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <h3>
-          <a href="#">Cookie<i class="fa-solid fa-cookie-bite"></i></a>
-        </h3>
-        <p>
-          là một chủ đề cửa hàng được thiết kế cho các doanh nghiệp nhỏ liên
-          quan đến thực phẩm
+    <section class="testimonial">
+      <div class="quote-container">
+        <p class="quote">
+          “Crispy on the outside, gooey on the inside, and packed with
+          chocolatey goodness in every bite. One taste, and you'll be hooked —
+          it's like a warm hug in cookie form!”
         </p>
+        <p class="author">– Trung Trờ Tre –</p>
       </div>
-      <div class="footer-links">
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">FAQ</a>
-      </div>
-      <div class="footer-contact">
-        <a href="https://www.facebook.com/TrungRocciu/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="https://github.com/DucTrung3110/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-        <a href="https://www.youtube.com/@DucTrung3110/videos" target="_blank"><i
-            class="fa-brands fa-square-youtube"></i></a>
-        <p>domain.com</p>
-        <p>(123) 456-7890</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>Designed by <strong>ductrung3110</strong></p>
-    </div>
-  </footer>
-</body>
+    </section>
 
-<script src="./home/main.js"></script>
-<script src="./cart/cart.js"></script>
+    <section class="bestseller-section">
+      <div class="bestseller-row">
+        <span>Bánh kem <i class="fa-solid fa-heart"></i></span>
+        <span>Bánh mì <i class="fa-solid fa-heart"></i></span>
+        <span>Bánh quy <i class="fa-solid fa-heart"></i></span>
+        <span>bánh su kem <i class="fa-solid fa-heart"></i></span>
+        <span>bánh donut <i class="fa-solid fa-heart"></i></span>
+      </div>
 
+      <div class="cookie-image-container">
+        <img
+          src="./home/images/ai-generated-8758588_1280.png"
+          alt="Cookies Box"
+        />
+      </div>
+    </section>
+
+    <section class="follow-us">
+      <h2>Follow us <span>@ductrung3110</span></h2>
+      <div class="feed-grid">
+        <a href="./sanpham/Croissant.html"
+          ><img src="./home/images/bread-1284438_1280.jpg" alt="Cookie 1"
+        /></a>
+        <a href="./sanpham/Petitfours.html"
+          ><img src="./home/images/cakes-489849_1280.jpg" alt="Cookie 2"
+        /></a>
+        <a href="./sanpham/Donut.html"
+          ><img src="./home/images/donuts-2969490_1280.jpg" alt="Cookie 3"
+        /></a>
+        <a href="./sanpham/Crumble.html"
+          ><img src="./home/images/strawberry-8214486_1280.jpg" alt="Cookie 4"
+        /></a>
+        <a href="./sanpham/Macaron.html"
+          ><img src="./home/images/patisserie-5392232_1280.jpg" alt="Cookie 5"
+        /></a>
+        <a href="./sanpham/Crepe.html">
+          <img
+            src="./home/images/strawberry-roll-1263099_1280.jpg"
+            alt="Cookie 6"
+          />
+        </a>
+        <a href="./sanpham/banhmi1.html"
+          ><img src="./home/images/bread-8814788_1280.jpg" alt="Cookie 7"
+        /></a>
+        <a href="./sanpham/Cookie.html"
+          ><img src="./home/images/cookies-1051884_1280.jpg" alt="Cookie 8"
+        /></a>
+        <a href="#"
+          ><img src="./home/images/cupcakes-6251116_1280.jpg" alt="Cookie 9"
+        /></a>
+        <a href="./sanpham/PuffPastry.html"
+          ><img src="./home/images/cake-6491617_1280.jpg" alt="Cookie 10"
+        /></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>
+            <a href="#">Cookie<i class="fa-solid fa-cookie-bite"></i></a>
+          </h3>
+          <p>
+            là một chủ đề cửa hàng được thiết kế cho các doanh nghiệp nhỏ liên
+            quan đến thực phẩm
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="./about/about.html">About</a>
+          <a href="./contact/contact.html">Contact</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-contact">
+          <a href="https://www.facebook.com/TrungRocciu/" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://github.com/DucTrung3110/" target="_blank"
+            ><i class="fa-brands fa-square-github"></i
+          ></a>
+          <a href="https://www.youtube.com/@DucTrung3110/videos" target="_blank"
+            ><i class="fa-brands fa-square-youtube"></i
+          ></a>
+          <p>domain.com</p>
+          <p>(123) 456-7890</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Designed by <strong>ductrung3110</strong></p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="./home/main.js"></script>
+  <script src="./cart/cart.js"></script>
 </html>
