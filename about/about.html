@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Liên hệ</title>
-    <link rel="stylesheet" href="contact.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Về chúng tôi</title>
+    <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="../home/style.css" />
     <script
       src="https://kit.fontawesome.com/4091c0430f.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -44,8 +46,8 @@
         </li>
         <li><a href="#">Khuyến mãi</a></li>
         <li><a href="../cart/cart.html">Giỏ hàng</a></li>
-        <li><a href="#">Liên hệ</a></li>
-        <li><a href="../about/about.html">Về chúng tôi</a></li>
+        <li><a href="../contact/contact.html">Liên hệ</a></li>
+        <li><a href="#">Về chúng tôi</a></li>
         <li><a href="#">Câu hỏi thường gặp</a></li>
         <li><a href="#">Chính sách đổi trả</a></li>
         <li><a href="#">Hướng dẫn đặt hàng</a></li>
@@ -74,62 +76,95 @@
       </div>
     </header>
 
-    <!-- Tiêu đề Giỏ hàng -->
-    <h1 class="cart-title">Liên hệ chúng tôi</h1>
-
-    <!-- form -->
-
-    <div class="contact-container">
-      <form
-        action="https://api.web3forms.com/submit"
-        method="POST"
-        class="contact-left"
-      >
-        <div class="container-left-tittle">
-          <h2>Liên hệ</h2>
-          <hr />
+    <!--profile-->
+    <div class="container">
+      <div class="profile-card">
+        <div class="img">
+          <img
+            src="./img/Chung.jpg "
+            alt="logo"
+            style="height: 200px; width: 200px"
+          />
         </div>
-        <input
-          type="hidden"
-          name="access_key"
-          value="29159212-e199-4c86-8f78-d87ecdf665f5"
-        />
-        <input
-          type="text"
-          placeholder="Họ và tên"
-          name="name"
-          class="contact-input"
-          required
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          name="email"
-          class="contact-input"
-          required
-        />
-        <input
-          type="text"
-          placeholder="Số điện thoại"
-          name="phone"
-          class="contact-input"
-          required
-        />
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Nội dung"
-          class="contact-input"
-          required
-        ></textarea>
-        <button type="submit" class="btn">
-          Gửi <img src="./img/arrow_icon.png" alt="arrow_icon" />
-        </button>
-      </form>
-      <div class="contact-right">
-        <img src="./img/right_img.png" alt="right_img" />
+        <div class="caption">
+          <h3>Nguyễn Thọ Chung</h3>
+          <p>Wed Development</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="img">
+          <img
+            src="./img/Trung.jpg "
+            alt="logo"
+            style="height: 200px; width: 200px"
+          />
+        </div>
+        <div class="caption">
+          <h3>Nguyễn Đức Trung</h3>
+          <p>Wed Development</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="img"><img src="./img/Hoang.JPG " alt="logo" /></div>
+        <div class="caption">
+          <h3>Vũ Ngọc Hoàng</h3>
+          <p>Wed Development</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="img">
+          <img
+            src="./img/Khuong.jpg"
+            alt="logo"
+            style="height: 200px; width: 200px"
+          />
+        </div>
+        <div class="caption">
+          <h3>Huỳnh Minh Khương</h3>
+          <p>Wed Development</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="img">
+          <img
+            src="./img/Nhat.jpg "
+            alt="logo"
+            style="height: 200px; width: 203px"
+          />
+        </div>
+        <div class="caption">
+          <h3>Nguyễn Minh Nhật</h3>
+          <p>Wed Development</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -147,8 +182,8 @@
           </p>
         </div>
         <div class="footer-links">
-          <a href="../about/about.html">About</a>
-          <a href="#">Contact</a>
+          <a href="#">About</a>
+          <a href="../contact/contact.html">Contact</a>
           <a href="#">FAQ</a>
         </div>
         <div class="footer-contact">
@@ -171,7 +206,6 @@
     </footer>
 
     <script src="../home/main.js"></script>
-    <script src="./contact.js"></script>
     <script src="../cart/cart.js"></script>
   </body>
 </html>

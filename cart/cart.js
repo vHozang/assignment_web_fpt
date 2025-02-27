@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       <!-- Ở giữa hiển thị brand, tên, các thông tin khác -->
       <div class="cart-item-center">
-        <h4 class="cart-item-brand">V Max series</h4>
+        <h4 class="cart-item-brand">Cookie<i class="fa-solid fa-cookie-bite"></i></h4>
         <h2 class="cart-item-name">${item.name}</h2>
         <p>Giá gốc: ${item.basePrice} đ</p>
         <p>Size: ${item.sizeName} (+${item.sizePrice} đ)</p>
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
 
           <div class="action-buttons">
-            <button class="order-btn">Đặt hàng</button>
+            <a href="../payment/thanhtoan.html"><button class="order-btn">Đặt hàng</button></a href="../payment/thanhtoan.html">
             <button class="remove-btn">Xóa</button>
           </div>
         </div>

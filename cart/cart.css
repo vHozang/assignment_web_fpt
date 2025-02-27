@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f8f8f8;
   color: #333;
 }
@@ -81,7 +81,7 @@ body {
   margin-bottom: 8px;
 }
 
-/* Giá gốc gạch ngang (nếu có) */
+/* Giá gốc gạch ngang */
 .cart-item-old-price {
   margin-left: 8px;
   font-size: 14px;
@@ -152,16 +152,8 @@ body {
   cursor: pointer;
   border-radius: 4px;
   font-size: 14px;
-  background-color: #4caf50;
 }
 
 .order-btn:hover {
   opacity: 0.8;
 }
-/*Footer luôn luôn nằm dưới cùng*/
-.footer{
-  background: #0066cc;
-  position: absolute;
-  bottom: 0;
-  width: 100%; 
- }

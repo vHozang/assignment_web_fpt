@@ -2,8 +2,14 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <title>Giỏ hàng</title>
-    <link rel="stylesheet" href="cart.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="auth.css" />
     <link rel="stylesheet" href="../home/style.css" />
     <script
       src="https://kit.fontawesome.com/4091c0430f.js"
@@ -45,7 +51,7 @@
           </ul>
         </li>
         <li><a href="#">Khuyến mãi</a></li>
-        <li><a href="#">Giỏ hàng</a></li>
+        <li><a href="../cart/cart.html">Giỏ hàng</a></li>
         <li><a href="../contact/contact.html">Liên hệ</a></li>
         <li><a href="../about/about.html">Về chúng tôi</a></li>
         <li><a href="#">Câu hỏi thường gặp</a></li>
@@ -67,8 +73,8 @@
           ></a>
         </div>
         <div class="nav-right">
-          <a href="../auth/login.html"><i class="fa-solid fa-user"></i></a>
-          <a href="#" id="cartLink">
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="../cart/cart.html" id="cartLink">
             <i class="fa-solid fa-cart-shopping"></i>
             <span id="cartCount" class="cart-count">0</span>
           </a>
@@ -76,11 +82,59 @@
       </div>
     </header>
 
-    <!-- Tiêu đề Giỏ hàng -->
-    <h1 class="cart-title">GIỎ HÀNG CỦA BẠN</h1>
+    <div class="auth-page">
+      <div class="auth-container">
+        <div class="auth-card">
+          <a href="../index.html"
+            >Cookie<i class="fa-solid fa-cookie-bite"></i
+          ></a>
+          <h2 class="text-center mb-4">Đăng nhập tài khoản</h2>
 
-    <!-- Khu vực hiển thị giỏ hàng -->
-    <div id="cartContainer"></div>
+          <form id="loginForm" class="auth-form">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="loginEmail"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Mật khẩu</label>
+              <input
+                type="password"
+                class="form-control"
+                id="loginPassword"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 mb-3">
+              Đăng nhập
+            </button>
+
+            <div class="text-center mb-3">
+              <a href="forgot-password.html" class="text-muted"
+                >Quên mật khẩu?</a
+              >
+            </div>
+
+            <div class="separator">hoặc</div>
+
+            <button type="button" class="btn btn-facebook w-100 mt-3">
+              <i class="bi bi-facebook me-2"></i>Đăng nhập bằng Facebook
+            </button>
+
+            <div class="text-center mt-4">
+              Chưa có tài khoản?
+              <a href="register.html" class="text-primary">Đăng ký ngay</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer-content">
@@ -119,7 +173,10 @@
       </div>
     </footer>
 
-    <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="auth.js"></script>
     <script src="../home/main.js"></script>
+    <script src="../cart/cart.js"></script>
   </body>
 </html>

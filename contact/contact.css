@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .contact-container {
-  height: 70vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -87,11 +87,4 @@
   font-weight: 700;
   margin: 20px 0 20px;
   color: #333;
-}
-/*Footer luôn luôn nằm dưới cùng*/
-.footer {
-  background: #0066cc;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
