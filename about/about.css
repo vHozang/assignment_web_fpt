@@ -16,8 +16,8 @@
 }
 .profile-card:hover {
   border-radius: 10px;
-  height: 290px;
-  width: 230px;
+  height: 320px;
+  width: 220px;
 }
 .profile-card .img {
   position: relative;
@@ -43,7 +43,7 @@
 }
 .caption {
   text-align: center;
-  transform: translateY(-60px);
+  transform: translateY(-85px);
   opacity: 0;
   transition: 0.6s;
 }
