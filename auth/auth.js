@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (email === "langla779@gmail.com" && password === "123456") {
         alert("Đăng nhập thành công!");
+        window.location.href = "../index.html";
       } else {
         alert("Email hoặc mật khẩu không chính xác!");
       }
@@ -36,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       alert("Đăng ký thành công! Chuyển hướng đến trang đăng nhập.");
-      window.location.href = "login.html";
+      window.location.href = "../index.html";
     });
   }
 });
